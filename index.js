@@ -4,7 +4,7 @@ var os = require('os');
 var spawnSync = require('child_process').spawnSync;
 var spawn = require('child_process').spawn;
 
-var SafariBrowser = function(baseBrowserDecorator, logger) {
+var SafariBrowserNative = function(baseBrowserDecorator, logger) {
   baseBrowserDecorator(this);
   var log = logger.create('launcher');
 

@@ -1,6 +1,6 @@
 {
   "name": "karma-safarinative-launcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Karma plugin. Launcher for Safari. Uses MAC Launcher services",
   "main": "index.js",
   "scripts": {
