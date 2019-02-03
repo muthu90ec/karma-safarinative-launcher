@@ -11,10 +11,13 @@ var SafariBrowserNative = function(baseBrowserDecorator, logger) {
   this._start = function(url) {
     var self = this;
 
-    var safariUrlLauncher = path.normalize(__dirname + '/SafariUrlLauncher');
+    var safariUrlLauncher = path.normalize(__dirname + '/SafariURLLauncher');
     self._execCommand(self._getCommand(), []);
     //Use launch services to open url in Safari.
     let urlLauncher = spawnSync(safariUrlLauncher, [url], {"cwd": os.tmpdir(), "encoding": "utf8"});
+
+    log.info("Output Array from SafariURLLauncher: ", urlLauncher.output);
+    log.info("Stdout from SafariURLLauncher: ", urlLauncher.stdout);
 
     var baseOnProcessExit = this._onProcessExit
     this._onProcessExit = function (code, errorOutput) {
