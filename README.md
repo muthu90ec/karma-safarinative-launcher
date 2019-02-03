@@ -4,7 +4,7 @@ With Safari 12, the browser cannot load html files from disk without user permis
 
 This launcher uses the MAC Launch services API to open karma url in Safari browser.
 
-##Usage
+## Usage
 ```
 module.exports = function(config) {
   config.set({
