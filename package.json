@@ -1,0 +1,31 @@
+{
+  "name": "karma-safarinative-launcher",
+  "version": "1.0.0",
+  "description": "A Karma plugin. Launcher for Safari. Uses MAC Launcher services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:muthu90ec/karma-safarinative-launcher.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-launcher",
+    "safari",
+    "native"
+  ],
+  "author": "Muthuraj Ramalinga kumar <muthuraj90ec@gmail.com>",
+  "dependencies": {},
+  "peerDependencies": {
+    "karma": ">=0.9"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-npm": "0.0.2",
+    "grunt": "~0.4.1",
+    "grunt-bump": "0.0.7",
+    "grunt-auto-release": "0.0.2"
+  }
+}
